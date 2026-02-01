@@ -1,5 +1,6 @@
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 interface SubsidiaryCardProps {
   name: string;
@@ -41,13 +42,15 @@ const SubsidiaryCard = ({ name, description, logo, website, delay = '0s' }: Subs
             Visit Website
             <ExternalLink className="ml-2 h-4 w-4" />
           </Button>
-          <Button 
-            variant="outline" 
-            className="flex-1 hover-lift"
-          >
-            Learn More
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link to="/subsidiaries" className="flex-1">
+            <Button 
+              variant="outline" 
+              className="w-full hover-lift"
+            >
+              Learn More
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
