@@ -68,7 +68,7 @@ const Index = () => {
               name="Skawsh"
               description="Our flagship technology subsidiary, delivering cutting-edge digital solutions and innovative platforms that transform how businesses operate in the modern landscape."
               logo={skawshLogo}
-              website="#"
+              website="https://skawsh.com"
               delay="0.2s"
             />
           </div>

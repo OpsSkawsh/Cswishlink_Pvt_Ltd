@@ -2,6 +2,7 @@ import Layout from '@/components/Layout';
 import SubsidiaryCard from '@/components/SubsidiaryCard';
 import { Plus, Building2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import skawshLogo from '@/assets/skawsh-logo.png';
 
 const Subsidiaries = () => {
@@ -10,7 +11,7 @@ const Subsidiaries = () => {
       name: "Skawsh",
       description: "A cutting-edge technology company specializing in innovative digital solutions, platform development, and transformative business applications that drive industry evolution.",
       logo: skawshLogo,
-      website: "#",
+      website: "https://skawsh.com",
       featured: true
     }
   ];
@@ -130,9 +131,11 @@ const Subsidiaries = () => {
                 Interested in joining our portfolio? We're seeking exceptional companies 
                 with innovative solutions and strong growth potential.
               </p>
-              <Button size="lg" className="hero-gradient text-primary-foreground hover-glow px-8">
-                Get in Touch
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="hero-gradient text-primary-foreground hover-glow px-8">
+                  Get in Touch
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

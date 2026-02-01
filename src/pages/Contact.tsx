@@ -64,7 +64,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Email</div>
-                    <div className="text-muted-foreground">contact@cswishlink.com</div>
+                    <a href="mailto:cswishlink@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">cswishlink@gmail.com</a>
                   </div>
                 </div>
 
@@ -74,7 +74,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Phone</div>
-                    <div className="text-muted-foreground">+1 (555) 123-4567</div>
+                    <a href="tel:+918197739892" className="text-muted-foreground hover:text-primary transition-colors">+91 8197739892</a>
                   </div>
                 </div>
 
@@ -85,9 +85,9 @@ const Contact = () => {
                   <div>
                     <div className="font-semibold text-foreground">Address</div>
                     <div className="text-muted-foreground">
-                      123 Corporate Boulevard<br />
-                      Suite 500, Business District<br />
-                      New York, NY 10001
+                      5-497, Near HITEC City,<br />
+                      Izzathnagar, Kondapur,<br />
+                      Hyderabad, Telangana 500084
                     </div>
                   </div>
                 </div>
@@ -198,12 +198,18 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">CSWISHLINK Private Limited</h3>
               <p className="text-muted-foreground mb-4">
-                123 Corporate Boulevard, Suite 500<br />
-                Business District, New York, NY 10001
+                5-497, Near HITEC City, Izzathnagar,<br />
+                Kondapur, Hyderabad, Telangana 500084
               </p>
-              <Button variant="outline" className="hover-lift">
-                Get Directions
-              </Button>
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Kondapur+Hyderabad+Telangana+500084" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" className="hover-lift">
+                  Get Directions
+                </Button>
+              </a>
             </div>
           </div>
         </div>
